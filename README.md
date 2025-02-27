@@ -35,16 +35,16 @@ Nestify is a platform that makes it easy to find, list, and explore houses for s
    ```bash
    git clone https://github.com/nshiziw/nestify.git
    cd nestify
-   ```bash
+   ```
 
 2. Install dependencies
 
     ```bash
     npm install
-    bash```
+    ```
 
 3. Run the development server
 
     ```bash
     npm run dev
-    bash```
+    ```
