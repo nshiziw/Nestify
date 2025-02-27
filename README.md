@@ -26,12 +26,22 @@ Nestify is a platform that makes it easy to find, list, and explore houses for s
 ### Prerequisites
 
 1. Install Node.js (v14+)
-2. Install MySQL and set up your database (on an external hosting like **Heroku**, **PlanetScale**, or **AWS RDS**).
+2. Install MySQL and set up your database
 
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/nestify.git
+   git clone https://github.com/nshiziw/nestify.git
    cd nestify ```bash
+
+2. Install dependencies
+
+    ```bash
+    npm install ```bash
+
+3. Run the development server
+
+    ```bash
+    npm run dev ```bash
