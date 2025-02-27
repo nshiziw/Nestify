@@ -41,10 +41,10 @@ Nestify is a platform that makes it easy to find, list, and explore houses for s
 
     ```bash
     npm install
-    ```bash
+    bash```
 
 3. Run the development server
 
     ```bash
     npm run dev
-    ```bash
+    bash```
