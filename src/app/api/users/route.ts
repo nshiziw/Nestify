@@ -53,3 +53,19 @@ export async function POST(req: NextRequest) {
         }, {status: 500})
     }
 }
+
+
+export async function PUT(req: NextRequest) {
+    try {
+        const body = await req.json();
+        return NextResponse.json({
+            message: "User updated successfully",
+            updatedUser: body
+        }, {status: 200})
+    } catch (err) {
+        return NextResponse.json({
+            message: "Error parsing request body",
+            error: err instanceof Error ? err.message : "Invalid request body"
+        }, {status: 400})
+    }
+}
