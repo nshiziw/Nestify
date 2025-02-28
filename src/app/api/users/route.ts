@@ -24,10 +24,32 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
     const body = await req.json();
-    const newUser = { id: Date.now(), ...body };
+    if (!body.username) {
+        return NextResponse.json({
+            message: "Username is required"
+        }, {status: 400})
+    }
 
-    return NextResponse.json({
-        message: "User created successfully",
-        user: newUser
-    }, {status: 200})
+    if (!body.email) {
+        return NextResponse.json({
+            message: "Email is required"
+        }, {status: 400})
+    }
+
+
+    try {
+        
+        const newUser = { id: Date.now(), ...body };
+    
+        return NextResponse.json({
+            message: "User created successfully",
+            user: newUser
+        }, { status: 200 })
+        
+    } catch (error) {
+        return NextResponse.json({
+            message: "Error creating user",
+            error: error instanceof Error ? error.message : "User creation failed"
+        }, {status: 500})
+    }
 }
