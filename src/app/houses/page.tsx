@@ -61,7 +61,7 @@ const Page = () => {
                     {/* filter section */}
                     <h1 className='text-3xl font-bold'>Filter by:</h1>
                     <div>
-                        <form className='pb-6 border-b mt-10'>
+                        <form className='pb-3 border-b mt-6'>
                             <h1 className='text-xl font-semibold'>Price</h1>
                             <div className='flex gap-2 items-center'>
                                 <div className='flex flex-col'>
@@ -75,7 +75,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </form>
-                        <form className='pb-6 border-b mt-10'>
+                        <form className='pb-3 border-b mt-6'>
                             <h1 className='text-xl font-semibold'>Location</h1>
                             <div className='flex flex-col gap-1'>
                                 <div className='flex items-center gap-1'>
@@ -96,7 +96,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </form>
-                        <form className='pb-6 border-b mt-10'>
+                        <form className='pb-3 border-b mt-6'>
                             <h1 className='text-xl font-semibold'>House Type</h1>
                             <div className='flex flex-col gap-1'>
                                 <div className='flex items-center gap-1'>
@@ -117,7 +117,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </form>
-                        <form className='pb-6 border-b mt-10'>
+                        <form className='pb-3 border-b mt-6'>
                             <h1 className='text-xl font-semibold'>Bedrooms</h1>
                             <div className='flex flex-col gap-1'>
                                 <div className='flex items-center gap-1'>
@@ -146,7 +146,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </form>
-                        <form className='pb-6 border-b mt-10'>
+                        <form className='pb-3 border-b mt-6'>
                             <h1 className='text-xl font-semibold'>Bathrooms</h1>
                             <div className='flex flex-col gap-1'>
                                 <div className='flex items-center gap-1'>
@@ -175,7 +175,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </form>
-                        <form className='pb-6 border-b mt-10'>
+                        <form className='pb-3 border-b mt-6'>
                             <h1 className='text-xl font-semibold'>Area: Square meters</h1>
                             <div className='flex gap-2 items-center'>
                                 <div className='flex flex-col'>
@@ -189,7 +189,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </form>
-                        <form className='pb-6 border-b mt-10'>
+                        <form className='pb-3 border-b mt-6'>
                             <h1 className='text-xl font-semibold'>Nearby Amenities</h1>
                             <div className='flex flex-col gap-1'>
                                 <div className='flex items-center gap-1'>
@@ -210,7 +210,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </form>
-                        <form className='pb-6 border-b mt-10'>
+                        <form className='pb-3 border-b mt-6'>
                             <h1 className='text-xl font-semibold'>Furniture</h1>
                             <div className='flex flex-col gap-1'>
                                 <div className='flex items-center gap-1'>
@@ -223,7 +223,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </form>
-                        <form className='pb-6 border-b mt-10'>
+                        <form className='pb-3 border-b mt-6'>
                             <h1 className='text-xl font-semibold'>House Status</h1>
                             <div className='flex flex-col gap-1'>
                                 <div className='flex items-center gap-1'>
@@ -264,7 +264,7 @@ const Page = () => {
                             </select>
                         </form>
                     </div>
-                    <div className='grid grid-cols-3 gap-8 mt-4'>
+                    <div className='grid grid-cols-3 gap-5 mt-4'>
                         {Houses.map((House, index) => (
                             <Link href={`/houses/${House.id}`} key={index} className='relative rounded-lg overflow-hidden'>
                                 <Image className='w-full aspect-[3/2] object-cover' src={House.image} alt={House.title} width={500} height={500} loading='lazy' />
